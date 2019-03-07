@@ -1,0 +1,23 @@
+-var list_4 = [ "CREATIVE", "TEAMWORK", "INNOVATE", "COMMUNICATION"]
+
+mixin list_12(title_name, blue, grey)
+    p.skills__name= title_name 
+    ul.skills__list
+        - for (var i = 0; i < blue; i++)
+            li.skills__item
+        - for (var j = 0; j < grey; j++)
+            li.skills__item.skills__item--grey
+
+
+section.skills
+    .skills__wrap
+        .skills__svg-wrap
+            <svg class="skills__logo" width=115 height=auto viewBox="0 0 150 150">
+            <use xlink:href="#skills">
+            </svg>
+        h1.skills__title SKILLS
+        .skills__line-bg
+    +list_12(list_4[0], 9, 3)
+    +list_12(list_4[1], 11, 1)
+    +list_12(list_4[2], 6, 6)
+    +list_12(list_4[3], 11, 1)

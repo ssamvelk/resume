@@ -1,0 +1,126 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 2.5%;
+    padding: 0 2.5%;
+    background: rgba(248, 244, 51, 0.6);
+}
+.education__wrap{
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education__logo{
+    width: 100%;
+    height: auto;
+}
+.education__title{
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+    font-size: rem(40);
+}
+.education__line-bg{
+    @include line;
+}
+
+.education__list{}
+.education__list-item{
+    font-size: rem(24);
+    list-style-type: none;
+    position: relative;
+    margin-left: rem(25);
+    
+   
+    &::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(9);
+        left: rem(-25);        
+    }
+
+}
+.education__prof{
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+}
+.education__prof-date{
+    margin-left: rem(17);
+}
+
+@media (min-width:$tableWidth){//768px;
+    .education{
+        margin-top: 10%;
+    }
+}
+
+
+@media(min-width:$bigDesktopWidth){
+    .education{
+        @include zero;
+        margin-top: rem(118);
+    }
+    .education__svg-wrap{
+
+    }
+
+    .education__wrap{
+        height: rem(115);
+        //margin-top: rem(118);
+    }
+
+    .education__logo{
+        width: rem(115);
+    }
+
+    .education__title{
+
+        font-size: rem(63.72);
+        margin-left: rem(29);
+        margin-top: rem(-11);
+        //letter-spacing: rem(1); 
+    }
+    .education__line-bg{
+        @include line;
+        max-width: rem(482);
+        margin-top: rem(-11);
+    }
+    
+    .education__list{
+        margin-top: rem(30);
+    }
+    .education__list-item{
+        @include zero;
+        font-size: rem(39.83);    
+        margin-left: rem(82);
+        line-height: 1.4;
+        list-style-type: none;
+        position: relative;
+        margin-bottom: rem(15);
+
+        &::before{
+            content: "";
+            width: 31px;
+            height: 31px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: rem(14);
+            left: rem(-62);        
+        }
+    
+        p{
+            font-size: rem(23.9);
+            line-height: 1.2; 
+        }
+    }
+}
+
+  

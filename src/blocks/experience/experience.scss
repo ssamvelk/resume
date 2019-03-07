@@ -1,0 +1,109 @@
+.experience{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 2.5%;
+    background: rgba(248, 244, 51, 0.9);
+}
+.experience__wrap{
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+ 
+    align-items: center;
+}
+.experience__logo{
+    width: auto;
+    height: 100%;
+}
+.experience__title{
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+    font-size: rem(40); 
+}
+.experience__line-bg{
+    @include line;
+}
+.experience__list{}
+.experience__list-item{
+    font-size: rem(24);    
+    list-style-type: none;
+    position: relative;
+    margin-left: 25px;
+
+    &::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: rem(9);
+        left: rem(-25);        
+    }
+
+    p{
+        font-size: rem(16); 
+    }
+}
+.experience__prof{
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+}
+.experience__prof-date{
+    
+}
+
+@media(min-width:$bigDesktopWidth){
+    .experience{
+        @include zero;
+        margin-top: rem(65);
+    }
+    .experience__wrap{
+        height: rem(118);
+    }
+    .education__logo{
+        width: rem(118);
+    }
+    .experience__title{
+    font-size: rem(63.72);
+    margin-left: rem(25);
+    margin-top: rem(-11); 
+    }
+    .experience__line-bg{
+        @include line;
+        max-width: rem(483);
+        margin-left: 0;
+        margin-top: rem(-11);
+    }
+    .experience__list{
+        margin-top: rem(53);
+    }
+    .experience__list-item{
+        font-size: rem(39.83);     
+        margin-left: rem(82);
+        margin-bottom: rem(10);
+
+        &::before{
+            content: "";
+            width: 31px;
+            height: 31px;
+            top: rem(13);
+            left: rem(-62);        
+        }
+
+        p{
+            font-size: rem(23.9);
+            line-height: 1.2; 
+        }
+    }
+    .experience__prof{
+        font-family: "MyriadPro Bold";
+        color: $title-color;
+    }
+    .experience__prof-date{
+        margin-left: rem(14);
+    }
+
+}

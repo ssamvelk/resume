@@ -1,0 +1,18 @@
+mixin item
+    li.education__list-item 
+        <span class="education__prof">MASTER DEGREE </span><span class="education__prof-date"> // Feb 2011 - Jun 2014</span><br>UNIVERSITY NAME
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+
+section.education
+    .education__wrap
+        .education__svg-wrap
+            <svg class="education__logo" width=115 height=auto viewBox="0 0 150 150">
+            <use xlink:href="#education">
+            </svg>
+        .education__title EDUCATION
+        .education__line-bg
+
+    ul.education__list
+    - for (var i = 0; i < 4; i++)
+        +item

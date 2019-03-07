@@ -1,0 +1,32 @@
+// Fonts here
+/* ------подключаем шрифт*/
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('/src/fonts/MyriadPro-Regular.eot');
+  src: url('/src/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/MyriadPro-Regular.woff') format('woff'),
+  url('/src/fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'MyriadPro Bold';
+  src: url('/src/fonts/MyriadPro-Bold.eot');
+  src: url('/src/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/MyriadPro-Bold.woff') format('woff'),
+  url('/src/fonts/MyriadPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'MyriadPro Light SemiExt';
+  src: url('/src/fonts/MyriadPro-LightSemiExt.eot');
+  src: url('/src/fonts/MyriadPro-LightSemiExt.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/MyriadPro-LightSemiExt.woff') format('woff'),
+  url('/src/fonts/MyriadPro-LightSemiExt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  

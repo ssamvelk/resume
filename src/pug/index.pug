@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        title Резюме
+    body
+        include ../img/sprite.svg
+        main.wrapper
+            .wrapper__left
+                include ../blocks/user/user.pug
+                include ../blocks/profile/profile.pug
+                include ../blocks/contact/contact.pug
+                include ../blocks/skills/skills.pug
+            .wrapper__right
+                include ../blocks/education/education.pug
+                include ../blocks/experience/experience.pug
+                include ../blocks/software/software.pug

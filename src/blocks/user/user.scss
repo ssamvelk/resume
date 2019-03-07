@@ -1,0 +1,93 @@
+.user{
+    margin-top: 2.5%;
+    box-sizing: border-box;
+    width: 100%;
+    
+    background: rgba(12, 214, 79, 0.5);
+    text-align: center;
+}
+.user__foto{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.user__name{
+    font-family: "MyriadPro Light SemiExt";
+    font-size: rem(54);
+    font-weight: 300;
+    margin: 0 auto ;
+}
+.user__surname{
+    font-family: "MyriadPro Bold";
+    font-size: rem(64);
+}
+.user__prof{
+    font-family: "MyriadPro Bold";
+    font-size: rem(26);
+    margin-bottom: 13.416%;
+}
+
+@media screen and (min-width:480px){//480px;
+    .user__foto{
+        max-width: 222px;
+    }
+}
+
+
+@media screen and (min-width:$tableWidth){//768px;
+    .user{
+        margin-top: 10%;
+    }
+    .user__foto{
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: $desktopWidth){//1280px;
+    .user{
+        margin-top: 12.5%;
+    }
+    .user__foto{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: $bigDesktopWidth){
+    .user{
+        margin-top: rem(137);
+    }
+
+    .user__foto{
+        max-width: 359px;
+        margin-top: rem(1);
+        margin-left: rem(-87);
+    }
+
+    .user__name{  
+        font-size: rem(81.9);
+        line-height: 0;
+            
+        margin: 0;
+        margin-left: rem(-87);
+        margin-top: rem(81);
+            
+        display: block;
+    }
+    .user__surname{
+        font-size: rem(96.57);
+        margin: 0;
+        margin-left: rem(-87);
+        margin-top: rem(15);
+        padding: 0;
+        //letter-spacing: 3px;
+        display: block;
+    }
+    .user__prof{
+        font-size: rem(38.7);
+        margin-left: rem(-87);
+        margin-top: rem(-16);
+        letter-spacing: rem(-1);
+    }
+}
+  

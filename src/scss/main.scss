@@ -1,0 +1,80 @@
+@import "utils/fonts.scss";
+@import "utils/vars.scss";
+@import "utils/mixins.scss";
+
+*{@include zero;}
+
+html,
+body{
+    font-size: $mainFontSize;
+    font-family: $mainFont;
+    line-height: $mainLineHeight; 
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: auto;
+    min-width: rem(320);
+    background-color: rosybrown;
+}
+.wrapper__left{
+    display: flex;
+    flex-direction: column;
+    //padding-right: 15.567%;
+}
+.wrapper__right{
+    display: flex;
+    min-width: rem(320);
+    flex-direction: column;
+    background-color: rgb(86, 5, 141);
+}
+//---------------------------------------------------480px;
+//@media screen and (min-width: $phoneWidth){}
+//---------------------------------------------------768px;
+@media screen and (min-width:$tableWidth){
+    .wrapper {
+        display: flex;
+        margin-left: 4.9%;
+        margin-right: 4.6%;
+    }
+    .wrapper__left{
+        width: 43.63%;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper__right{
+        width: 56.37%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+//---------------------------------------------------1280px
+@media screen and (min-width:$desktopWidth ){
+    .wrapper {
+  
+    }
+}
+
+@media screen and (min-width:$bigDesktopWidth){//bigDesktopWidth         : 1920px;
+
+    .wrapper {
+        min-width: 1737px;
+
+    }
+    .wrapper__left{
+        //width: 43.63%;
+        @include zero;
+
+    }
+    .wrapper__right{
+        //width: 56.37%;
+    }
+}
+
+@import "../blocks/user/user.scss";
+@import "../blocks/profile/profile.scss";
+@import "../blocks/contact/contact.scss";
+@import "../blocks/skills/skills.scss";
+@import "../blocks/education/education.scss";
+@import "../blocks/experience/experience.scss";
+@import "../blocks/software/software.scss";

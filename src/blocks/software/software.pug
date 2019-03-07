@@ -1,0 +1,19 @@
+mixin item(text, val)
+    li.software__list-item
+        p.software__p= text
+        progress.software__progbar(value=val max=100)
+
+-var list = ["PHOTOSHOP", "DREAMWEAVER", "ILLUSTRATOR", "AFTER EFFECTS", "INDESIGN", "HTML&CSS3"]
+-var listval = [91, 83, 70, 61, 56, 91]
+
+section.software
+    .software__wrap
+        .software__svg-wrap
+            <svg class="software__logo" width=115 height=auto viewBox="0 0 150 150">
+            <use xlink:href="#software">
+            </svg>
+        h1.software__title SOFTWARE
+        .software__line-bg
+    ul.software__list
+        -for(var i=0; i < 6; i++)
+        +item(list[i], listval[i])

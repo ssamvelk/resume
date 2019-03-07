@@ -1,0 +1,17 @@
+mixin item
+    li.experience__list-item 
+        <span class="experience__prof">COMPANY NAME </span><span class="experience__prof-date">// Feb 2011 - Jun 2014</span><br>YOUR JOB HERE
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+
+section.experience
+    .experience__wrap
+        .experience__svg-wrap
+            <svg class="experience__logo" width=115 height=auto viewBox="0 0 150 150">
+            <use xlink:href="#expirience">
+            </svg>
+        h1.experience__title EXPERIENCE
+        .experience__line-bg
+    ul.experience__list
+        - for (var i = 0; i < 3; i++)
+            +item

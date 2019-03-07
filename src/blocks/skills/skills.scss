@@ -1,0 +1,123 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 2.5%;
+    background: rgba(243, 130, 55, 0.3);
+}
+.skills__wrap{
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+ 
+    align-items: center;
+}
+.skills__svg-wrap{
+
+}
+.skills__logo{
+    width: 100%;
+    height: auto;
+}
+.skills__title{
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+    font-size: rem(40);
+    //margin-left: rem(11);
+    //margin-top: rem(-11);
+    //letter-spacing: rem(1);   
+}
+.skills__line-bg{
+    @include line;
+    //margin-top: rem(-11);
+}
+.skills__name{
+    font-size: rem(24);
+    //margin-top: rem(42);
+    //margin-left: rem(246);
+}
+
+.skills__list{
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    
+    &:first-child{
+        margin-left: 0;
+        background-color: red;
+    }
+}
+.skills__item{
+    
+    display: block;
+    
+    width: rem(16);
+    height: rem(16);
+    background-color: $title-color;
+    border-radius: 50%;
+    margin-left: 1%;
+}
+
+.skills__item--grey{
+    background-color: $gray-color;
+}
+
+@media(min-width:$bigDesktopWidth){
+    .skills{
+        @include zero;
+        padding-right: rem(118);
+    }
+    .skills__wrap{
+        height: rem(115);
+    }
+    .skills__logo{
+        width: rem(115);
+        height: rem(115);
+        position: relative;
+    }
+    .skills__title{
+        @include zero;
+
+        font-size: rem(63.72);
+        margin-left: rem(5);
+        margin-top: rem(-11);
+        letter-spacing: 0;   
+    }
+    .skills__line-bg{
+        @include line;
+        margin-left: rem(12);
+        margin-top: rem(-11);
+        max-width: rem(297);
+    }
+    .skills__name{
+        @include zero;
+        font-size: rem(39.83);
+        margin-top: rem(25);
+        //margin-left: rem(246);
+        text-align: center;
+    }
+    
+    .skills__list{
+
+        @include zero;
+        padding-left: rem(55);
+        margin-top: rem(10);
+        letter-spacing: 0;
+    }
+    .skills__item{
+        
+        @include zero;
+        
+        width: rem(27);
+        height: rem(27);
+        background-color: $title-color;
+        //border-radius: 50%;
+        margin-left: rem(16);
+    
+    }
+    
+    .skills__item--grey{
+        background-color: $gray-color;
+    }
+}

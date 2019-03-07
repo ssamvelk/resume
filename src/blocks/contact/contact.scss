@@ -1,0 +1,118 @@
+.contact{
+    box-sizing: border-box;
+    padding: 0 2.5%;
+    background: rgba(230, 250, 50, 0.3);
+}
+    
+.contact__wrap{
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+     
+    align-items: center;
+}
+.contact__logo{
+    width: 50px;
+    height: auto;
+}
+.contact__title {
+    font-family: "MyriadPro Bold";
+    color: $title-color;
+    font-size: rem(40);
+    //margin-left: rem(17); 
+}
+
+.contact__line-bg{
+    @include line;
+    
+}
+.contact__list{
+    list-style-type: none;
+}
+
+.contact__item{
+    font-family: "MyriadPro";
+    display: flex;
+}
+.contact__item-name{
+    color: $title-color;
+    font-family: "MyriadPro Bold";
+    margin-right: 10%;
+}
+.contact__item-addres{
+    //margin-left: rem(65);
+}
+.contact__item-mail{
+    margin-left: rem(18);
+}
+.contact__item-phone{
+    margin-left: rem(18);
+}
+.contact__item-www{
+    margin-left: rem(5);
+}
+
+@media(min-width:$bigDesktopWidth){
+    .contact{
+        @include zero;
+        padding-right: rem(118);
+        margin-bottom: rem(70);
+    }
+    
+    .contact__wrap{
+        
+        height: rem(115);
+        
+    }
+    .contact__svg-wrap{
+        //width: rem(115);
+    }
+    .contact__logo{
+        width: rem(115);
+        height: rem(115);
+        position: relative;
+    }
+
+    .contact__title {
+        @include zero;
+
+        font-size: rem(63.72);
+        margin-left: rem(5);
+        margin-top: rem(-11);
+        letter-spacing: 0; 
+    }
+    
+    .contact__line-bg{
+        margin: 0;
+        max-width: 230px;
+        margin-top: rem(-11); 
+    }
+    
+    .contact__list{
+    }
+    
+    .contact__item{
+        font-family: "MyriadPro";
+        font-size: rem(31.86);
+        margin-top: rem(40);
+    }
+    .contact__item-name{
+        color: $title-color;
+        font-family: "MyriadPro Bold";
+    }
+
+    .contact__item-addres{
+        //margin-left: rem(0);
+    }
+    .contact__item-mail{
+        margin-left: rem(35);
+    }
+    .contact__item-phone{
+        margin-left: rem(33);
+    }
+    .contact__item-www{
+        margin-left: rem(11);
+    }
+}
+
