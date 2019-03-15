@@ -3,7 +3,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 0 2.5%;
-    background: rgba(243, 130, 55, 0.3);
+    //background: rgba(243, 130, 55, 0.3);
 }
 .skills__wrap{
     height: 56px;
@@ -17,7 +17,7 @@
 
 }
 .skills__logo{
-    width: 100%;
+    width: rem(50);
     height: auto;
 }
 .skills__title{
@@ -42,7 +42,7 @@
     box-sizing: border-box;
     list-style-type: none;
     display: flex;
-    
+    margin-bottom: 1%;
     &:first-child{
         margin-left: 0;
         background-color: red;
@@ -99,7 +99,6 @@
     }
     
     .skills__list{
-
         @include zero;
         padding-left: rem(55);
         margin-top: rem(10);

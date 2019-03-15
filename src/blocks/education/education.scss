@@ -4,18 +4,22 @@
     box-sizing: border-box;
     margin-top: 2.5%;
     padding: 0 2.5%;
-    background: rgba(248, 244, 51, 0.6);
+    //background: rgba(248, 244, 51, 0.6);
 }
 .education__wrap{
-    height: 56px;
+    height: rem(56);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.education__svg-wrap{
+    
+}
+
 .education__logo{
-    width: 100%;
+    width: rem(50);
     height: auto;
 }
 .education__title{
@@ -29,7 +33,7 @@
 
 .education__list{}
 .education__list-item{
-    font-size: rem(24);
+    
     list-style-type: none;
     position: relative;
     margin-left: rem(25);
@@ -48,13 +52,17 @@
 
 }
 .education__prof{
+    font-size: rem(24);
     font-family: "MyriadPro Bold";
     color: $title-color;
 }
 .education__prof-date{
+    font-size: rem(24);
     margin-left: rem(17);
 }
-
+.education__univer{
+    font-size: rem(24);
+}
 @media (min-width:$tableWidth){//768px;
     .education{
         margin-top: 10%;
@@ -81,7 +89,6 @@
     }
 
     .education__title{
-
         font-size: rem(63.72);
         margin-left: rem(29);
         margin-top: rem(-11);
@@ -121,6 +128,9 @@
             line-height: 1.2; 
         }
     }
+    .education__prof,
+    .education__prof-date,
+    .education__univer{
+        font-size: rem(39.83); 
+    }
 }
-
-  

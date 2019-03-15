@@ -3,19 +3,20 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 0 2.5%;
-    background: rgba(67, 244, 51, 0.9);
+    //background: rgba(67, 244, 51, 0.9);
 }
 .software__wrap{
-    height: 56px;
+    height: rem(56);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
  
     align-items: center;
 }
+.software__svg-wrap{}
 .software__logo{
-    width: auto;
-    height: 100%;
+    width: rem(50);
+    height: auto;
 }
 .software__title{
     font-family: "MyriadPro Bold";
@@ -26,24 +27,24 @@
     @include line;
 }
 .software__list{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .software__list-item{
-
-font-size: rem(24);    
-//margin-left: rem(82);
-
-list-style-type: none;
-position: relative;
-
+    font-size: rem(24);
+    //margin-left: rem(82);
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 1%;
 }
-.software__p{}
+.software__p{
+    
+}
 .software__progbar{
-border: none;
-background-color: $gray-color;
-color: $title-color;
+    border: none;
+    background-color: $gray-color;
+    color: $title-color;
 }
 
 @media(min-width:$bigDesktopWidth){
@@ -54,6 +55,12 @@ color: $title-color;
     .software__wrap{
         height: rem(115);
     }
+
+    .software__logo{
+        width: rem(116);
+    }
+
+
     .software__title{
         font-size: rem(63.72);
         //margin-left: rem(11);
@@ -70,7 +77,8 @@ color: $title-color;
         padding-right: rem(4);
         margin-bottom: rem(140);
     }
-    .software__list-item{ 
+    .software__list-item{
+        @include zero; 
         margin-left: rem(12);
         margin-top: rem(30);
             
